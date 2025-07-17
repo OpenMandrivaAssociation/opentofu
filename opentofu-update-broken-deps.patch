@@ -1,0 +1,37 @@
+diff -up opentofu-1.10.3/go.mod.omv~ opentofu-1.10.3/go.mod
+--- opentofu-1.10.3/go.mod.omv~	2025-07-17 20:58:40.118536523 +0200
++++ opentofu-1.10.3/go.mod	2025-07-17 20:58:54.575768952 +0200
+@@ -83,9 +83,9 @@ require (
+ 	github.com/pkg/errors v0.9.1
+ 	github.com/posener/complete v1.2.3
+ 	github.com/spf13/afero v1.9.3
+-	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.588
+-	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/sts v1.0.588
+-	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tag v1.0.233
++	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.1200
++	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/sts v1.0.1200
++	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tag v1.0.1200
+ 	github.com/tencentyun/cos-go-sdk-v5 v0.7.29
+ 	github.com/tombuildsstuff/giovanni v0.15.1
+ 	github.com/xanzy/ssh-agent v0.3.1
+diff -up opentofu-1.10.3/go.sum.omv~ opentofu-1.10.3/go.sum
+--- opentofu-1.10.3/go.sum.omv~	2025-07-17 20:59:06.615859546 +0200
++++ opentofu-1.10.3/go.sum	2025-07-17 20:59:29.581604242 +0200
+@@ -1021,11 +1021,17 @@ github.com/stretchr/testify v1.10.0/go.m
+ github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.194/go.mod h1:7sCQWVkxcsR38nffDW057DRGk8mUjK1Ing/EFOK8s8Y=
+ github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.588 h1:DYtBXB7sVc3EOW5horg8j55cLZynhsLYhHrvQ/jXKKM=
+ github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.588/go.mod h1:7sCQWVkxcsR38nffDW057DRGk8mUjK1Ing/EFOK8s8Y=
++github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.1200 h1:n6elge0PuoOtHt67BhlQka5Y7ChPbCtp23zYDFw56V0=
++github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.1200/go.mod h1:r5r4xbfxSaeR04b166HGsBa/R4U3SueirEUpXGuw+Q0=
+ github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/kms v1.0.194/go.mod h1:yrBKWhChnDqNz1xuXdSbWXG56XawEq0G5j1lg4VwBD4=
+ github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/sts v1.0.588 h1:PlkFOALQZ9BLUyX8EalATUQD5xEn1Sz34C+Rw5VSpvk=
+ github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/sts v1.0.588/go.mod h1:vPvXNb+zBZVJfZCIKWcYxLpGzgScKKgiPUArobWZ+nU=
++github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/sts v1.0.1200 h1:vMs1ugEVAYZTyGRC+4WbGdET9zFkIhxB/SXAQXIl08U=
++github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/sts v1.0.1200/go.mod h1:XcSxJeZNnJ7Vg/sxMM2Z/nRZx78yG/QyqQHCTG0/mQg=
+ github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tag v1.0.233 h1:5Tbi+jyZ2MojC6GK8V6hchwtnkP2IuENUTqSisbYOlA=
+ github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tag v1.0.233/go.mod h1:sX14+NSvMjOhNFaMtP2aDy6Bss8PyFXij21gpY6+DAs=
++github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tag v1.0.1200 h1:+bWEnZuuTXv1OomDfmhR+ZrkMJKpbKY9BI5kGLpDUt4=
++github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tag v1.0.1200/go.mod h1:UXdLEtHwbNQFB/LGE0+Dnd94Xf3EDPw/lAjBRCztXzE=
+ github.com/tencentyun/cos-go-sdk-v5 v0.7.29 h1:uwRBzc70Wgtc5iQQCowqecfRT0OpCXUOZzodZHOOEDs=
+ github.com/tencentyun/cos-go-sdk-v5 v0.7.29/go.mod h1:4E4+bQ2gBVJcgEC9Cufwylio4mXOct2iu05WjgEBx1o=
+ github.com/thanhpk/randstr v1.0.4 h1:IN78qu/bR+My+gHCvMEXhR/i5oriVHcTB/BJJIRTsNo=
