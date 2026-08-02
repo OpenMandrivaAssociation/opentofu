@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:		opentofu
-Version:	1.10.3
+Version:	1.12.5
 Release:	1
 Summary:	Tool for building, changing and versioning infrastructure
 License:	MPL-2.0
