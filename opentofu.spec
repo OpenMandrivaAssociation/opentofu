@@ -34,6 +34,9 @@ export GOTOOLCHAIN=local
 umask 0022
 export GOFLAGS=-mod=vendor
 export GOTOOLCHAIN=local
+# go test -p defaults to the CPU count. A 160-thread run with atomic
+# coverage produced a truncated jsonformat.test ("exec format error").
+sed -i 's/go test -coverprofile/go test -p 8 -coverprofile/' Makefile
 # "make" actually runs the test suite
 %make_build
 
