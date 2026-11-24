@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 
 Name:		opentofu
-Version:	1.13.9
+Version:	1.13.10
 Release:	1
 Summary:	Tool for building, changing and versioning infrastructure
 License:	MPL-2.0
@@ -9,7 +9,7 @@ Group:		Development/Other
 Url:		https://www.opentofu.org/
 Source0:	https://github.com/opentofu/opentofu/archive/refs/tags/v%{version}.tar.gz
 Source1:	vendor.tar.xz
-BuildRequires:	golang >= 1.27.3
+BuildRequires:	golang >= 1.27.4
 BuildRequires:	make
 
 %description
