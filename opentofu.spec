@@ -9,6 +9,9 @@ Group:		Development/Other
 Url:		https://www.opentofu.org/
 Source0:	https://github.com/opentofu/opentofu/archive/refs/tags/v%{version}.tar.gz
 Source1:	vendor.tar.xz
+# The UI hook test waits 3.1s for three 1s progress lines. That misses the
+# third line when the suite runs under atomic coverage on a busy builder.
+Patch0:		opentofu-1.13.10-hook-ui-timer.patch
 BuildRequires:	golang >= 1.27.4
 BuildRequires:	make
 

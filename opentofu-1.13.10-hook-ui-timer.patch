@@ -1,0 +1,14 @@
+--- a/internal/command/views/hook_ui_test.go
++++ b/internal/command/views/hook_ui_test.go
+@@ -119,7 +119,10 @@
+ 		t.Fatalf("Expected hook to continue, given: %#v", action)
+ 	}
+ 
+-	time.Sleep(3100 * time.Millisecond)
++	// 3.1s misses the third 1s tick when this runs beside the rest of
++	// the suite (atomic coverage, high parallelism). 15s still asserts
++	// three progress lines, and later lines do not disturb the match.
++	time.Sleep(15 * time.Second)
+ 
+ 	// stop the background writer
+ 	uiState := h.resources[addr.String()]
